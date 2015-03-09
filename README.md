@@ -1,14 +1,34 @@
-Installation:
-    git clone git://github.com/kriskozlovsky/vim-pathogit
+#Vim-Pathogit
+A simple base for setting up [Vim][] plugins with git.
 
-Create symlink:
-    ln -s ~/.vim/vimrc ~/.vimrc
+##Installation:
 
-Switch to `~/.vim` directory, and fetch submodules:
-    cd ~/.vim
-    git submodule init
-    git submodule update
+1. Pull from repo to `~/.vim/`:
+
+        git clone git://github.com/kriskozlovsky/vim-pathogit ~/.vim
+    
+2. Create symlink for `.vimrc`:
+
+        ln -s ~/.vim/vimrc ~/.vimrc
+    
+3. Switch to `~/.vim` directory, and fetch submodules (at least one: [pathogen.vim][]):
+
+        cd ~/.vim
+        git submodule init
+        git submodule update
 
 
-Credits:
-    based on: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+##Adding plugins through git: 
+To install new plugins you need to add new submodule.
+For example to add [vim-fugitive][] do: 
+
+    git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+    
+##Credits:
+* *based on:*
+
+    http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
+[pathogen.vim]: https://github.com/tpope/vim-pathogen   "pathogen.vim by Tim Pope"
+[Vim]:          http://www.vim.org                      "Vi Improved"
+[vim-fugitive]: https://github.com/tpope/vim-fugitive   "fugitive.vim by Tim Pope"

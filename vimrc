@@ -8,7 +8,10 @@ syntax on
 filetype plugin on 
 filetype plugin indent on
 
-set t_Co=256
+set t_Co=16
+let g:solarized_termcolors=16
+set background=dark
+colorscheme solarized
 
 autocmd! bufwritepost .vimrc source % "Automatic reloading of .vimrc
 set mouse=a		"mouse on for all modes

@@ -10,3 +10,9 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = git://github.com/bling/vim-airline
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes

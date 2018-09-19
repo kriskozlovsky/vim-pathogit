@@ -1,7 +1,11 @@
-"General Settings
+" General Settings
+"
+
+let g:VIMHOME = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+
 if has('nvim')
-	let g:python_host_prog = '/home/kris/.nvim/neovim_p2/bin/python'
-	let g:python3_host_prog = '/home/kris/.nvim/neovim_p3/bin/python'
+	let g:python_host_prog = g:VIMHOME.'/envs/nvim_p2/bin/python'
+	let g:python3_host_prog = g:VIMHOME.'/envs/nvim/bin/python'
 else
 	set nocp		"no Vi compatibility
 	set ttymouse=xterm2
@@ -36,9 +40,9 @@ let g:airline_theme='solarized'
 set laststatus=2	"show airline for single window
 
 "Temporary Files Directory 
-set dir=~/.vim/tmpfiles/swap/
-set udir=~/.vim/tmpfiles/undo/
-set backupdir=~/.vim/tmpfiles/backup/
+let &dir=g:VIMHOME."/tmpfiles/swap/"
+let &udir=g:VIMHOME."/tmpfiles/undo/"
+let &backupdir=g:VIMHOME."/tmpfiles/backup/"
 
 autocmd! bufwritepost .vimrc source % "Automatic reloading of .vimrc
 set mouse=a		"mouse on for all modes

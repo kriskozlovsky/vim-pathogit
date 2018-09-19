@@ -4,8 +4,8 @@
 let g:VIMHOME = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 
 if has('nvim')
-	let g:python_host_prog = g:VIMHOME.'/envs/nvim_p2/bin/python'
-	let g:python3_host_prog = g:VIMHOME.'/envs/nvim/bin/python'
+	let g:python_host_prog = g:VIMHOME.'/.envs/nvim_p2/bin/python'
+	let g:python3_host_prog = g:VIMHOME.'/.envs/nvim/bin/python'
 else
 	set nocp		"no Vi compatibility
 	set ttymouse=xterm2
@@ -51,5 +51,10 @@ set number		"show numbered lines
 
 " Mapping
 nnoremap <leader>cp :setlocal spell spelllang=pl<cr>
+
+" Autocommands
+au FileType gitcommit setlocal spell spelllang=en
+
+
 
 "set fileformats=unix

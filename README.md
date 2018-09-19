@@ -26,7 +26,9 @@ To install new plugins you need to add new submodule.
 For example to add [vim-fugitive][] do: 
 
     git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
-    
+    cd bundle/fugitive
+    git pull origin master
+    cd ../..
 
 ##Updating plugins
 To update single plugin do:

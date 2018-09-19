@@ -27,6 +27,14 @@ For example to add [vim-fugitive][] do:
 
     git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
     
+
+##Updating plugins
+To update single plugin do:
+
+To update all plugins: 
+
+    git submodule update --recursive
+
 ##Credits:
 * *based on:*
 

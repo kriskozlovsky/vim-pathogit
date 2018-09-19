@@ -26,14 +26,6 @@ colorscheme solarized
 set colorcolumn=81
 
 
-"Python-mode
-let g:pymode_python = 'python3'
-let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
-let g:pymode_rope = 0
-let g:pymode_doc = 0
-
-"Jedi-vim
-
 "Airline
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'

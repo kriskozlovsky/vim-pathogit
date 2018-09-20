@@ -31,6 +31,9 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
 set laststatus=2	"show airline for single window
 
+"Deoplete
+let g:deoplete#enable_at_startup = 1
+
 "Temporary Files Directory 
 let &dir=g:VIMHOME."/tmpfiles/swap/"
 let &udir=g:VIMHOME."/tmpfiles/undo/"

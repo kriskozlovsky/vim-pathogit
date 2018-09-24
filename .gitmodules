@@ -22,3 +22,6 @@
 [submodule "bundle/nvim-typescript"]
 	path = bundle/nvim-typescript
 	url = https://github.com/mhartington/nvim-typescript
+[submodule "bundle/editorconfig-vim"]
+	path = bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim

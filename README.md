@@ -16,8 +16,7 @@ A simple base for setting up [Vim][] plugins with git.
        cd ~/.vim
        git submodule update --init --recursive
 
-##Random Installation Notes:
-
+## Random Installation Notes:
 1. For use of Solarized with Xtermianal you might need to use [.Xresources][]
 or if you are so unfortunate to use gnome-terminal [this][solarized-gnome] might be of use to you. It's ugly but it works
 

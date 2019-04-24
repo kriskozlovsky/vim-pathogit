@@ -46,6 +46,8 @@ set number		"show numbered lines
 
 " Mapping
 nnoremap <leader>cp :setlocal spell spelllang=pl<cr>
+nnoremap <leader>ce :setlocal spell spelllang=en<cr>
+nnoremap <leader>cn :setlocal nospell<cr>
 
 " Autocommands
 au FileType gitcommit setlocal spell spelllang=en

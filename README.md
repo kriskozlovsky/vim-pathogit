@@ -1,7 +1,7 @@
-#Vim-Pathogit
+# Vim-Pathogit
 A simple base for setting up [Vim][] plugins with git.
 
-##Installation:
+## Installation:
 
 1. Pull from repo to `~/.vim/`:
 
@@ -17,13 +17,13 @@ A simple base for setting up [Vim][] plugins with git.
 	git submodule update --init --recursive
 
 
-##Adding plugins through git: 
+## Adding plugins through git: 
 To install new plugins you need to add new submodule.
 For example to add [vim-fugitive][] do: 
 
     git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
     
-##Credits:
+## Credits:
 * *based on:*
 
     http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/

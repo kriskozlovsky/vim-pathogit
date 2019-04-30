@@ -55,10 +55,15 @@ set mouse=a		"mouse on for all modes
 set backspace=2		"make backspace normal
 set number		"show numbered lines
 
+
 " Mapping
 nnoremap <leader>cp :setlocal spell spelllang=pl<cr>
 nnoremap <leader>ce :setlocal spell spelllang=en<cr>
 nnoremap <leader>cn :setlocal nospell<cr>
+
+" Show Invisibles
+nnoremap <leader>l :set list!<cr>
+set listchars=tab:▸\ ,eol:¬,trail:•,nbsp:·
 
 " Autocommands
 au FileType gitcommit setlocal spell spelllang=en

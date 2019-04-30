@@ -31,7 +31,7 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
 set laststatus=2	"show airline for single window
 
-let g:airline#extensions#syntastic#enabled = 1 
+let g:airline#extensions#syntastic#enabled = 1
 
 "Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -45,7 +45,7 @@ let g:syntastic_check_on_wq = 0
 "!REQUIRES pylama and mypy to work!
 let g:syntastic_python_checkers = ["python", "pylama", "mypy"]
 
-"Temporary Files Directory 
+"Temporary Files Directory
 let &dir=g:VIMHOME."/tmpfiles/swap/"
 let &udir=g:VIMHOME."/tmpfiles/undo/"
 let &backupdir=g:VIMHOME."/tmpfiles/backup/"
